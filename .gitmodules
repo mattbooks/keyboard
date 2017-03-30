@@ -1,0 +1,3 @@
+[submodule "hardware/keyboard-modules.pretty"]
+	path = hardware/keyboard-modules.pretty
+	url = https://github.com/stormbard/Keyboard.pretty.git
