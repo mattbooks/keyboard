@@ -4,8 +4,8 @@ import math
 file = "/home/matt/projects/keyboard/hardware/keyboard.kicad_pcb"
 bak = file + ".bak"
 
-X_OFFSET = 70000000
-Y_OFFSET = 106000000
+X_OFFSET = 25000000
+Y_OFFSET = 40000000
 K_WIDTH  =  19000000
 TILT_D   = 10
 TILT     = math.radians(TILT_D)
@@ -17,7 +17,8 @@ pcb.BuildListOfNets()
 
 def move(module, point):
     d = pcb.FindModuleByReference("D" + str(module))
-    d.Flip(d.GetPosition())
+    if d.GetLayerName() == 'F.Cu':
+        d.Flip(d.GetPosition())
     d.SetPosition(pcbnew.wxPoint(point.x + X_OFFSET - D_OFFSET_X, point.y + Y_OFFSET - D_OFFSET_Y))
     pcb.FindModuleByReference("S" + str(module)).SetPosition(pcbnew.wxPoint(point.x + X_OFFSET, point.y + Y_OFFSET))
 
