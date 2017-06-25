@@ -53,6 +53,17 @@ LEFT_HAND = [
     Column(0,[62], 900)
 ]
 
+RIGHT_HAND = [
+    Column(0,[56,57,58,59,60]),
+    Column(2000000,[51,52,53,54,55]),
+    Column(3000000,[46,47,48,49,50]),
+    Column(3000000,[41,42,43,44,45]),
+    Column(-3000000,[36,37,38,39,40]),
+    Column(-3000000,[31,32,33,34,35]),
+    Column(-75000000,[63], 900),
+    Column(0,[64], 900)
+]
+
 pos = pcbnew.wxPoint(0,0)
 last_start_pos = pos
 
@@ -64,6 +75,18 @@ for c in LEFT_HAND:
         move(k, pcbnew.wxPoint(pos.x, pos.y))
         rotate(k, c.rotation + -10 * TILT_D)
         pos = pcbnew.wxPoint(round(pos.x - math.sin(TILT) * K_WIDTH), round(pos.y + math.cos(TILT) * K_WIDTH))
+
+pos = pcbnew.wxPoint(300000000,0)
+last_start_pos = pos
+
+for c in RIGHT_HAND:
+    pos = pcbnew.wxPoint(last_start_pos.x - K_WIDTH * math.cos(TILT) - c.offset * math.sin(TILT),
+                         last_start_pos.y + K_WIDTH * math.sin(TILT) - c.offset * math.cos(TILT))
+    last_start_pos = pos
+    for k in c.keys:
+        move(k, pcbnew.wxPoint(pos.x, pos.y))
+        rotate(k, c.rotation + 10 * TILT_D)
+        pos = pcbnew.wxPoint(round(pos.x + math.sin(TILT) * K_WIDTH), round(pos.y + math.cos(TILT) * K_WIDTH))
 
 pcb.Save(file)
 
