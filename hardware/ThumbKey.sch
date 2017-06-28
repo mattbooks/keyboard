@@ -33,7 +33,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 65 66
+Sheet 63 66
 Title ""
 Date ""
 Rev ""
@@ -57,7 +57,7 @@ AR Path="/5947FBED/59512178/5950FE13" Ref="S63"  Part="1"
 AR Path="/5947FBED/595128C4/5950FE13" Ref="S64"  Part="1" 
 F 0 "S61" H 2650 1500 60  0000 R CNN
 F 1 "SPST" H 2250 1500 60  0000 C CNN
-F 2 "keyboard-modules:CHERRY_PCB_150H" H 2400 1650 60  0001 C CNN
+F 2 "keyboard-modules:CHERRY_PCB_200V" H 2400 1650 60  0001 C CNN
 F 3 "" H 2400 1650 60  0001 C CNN
 	1    2400 1550
 	1    0    0    -1  

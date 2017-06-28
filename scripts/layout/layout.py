@@ -6,7 +6,7 @@ bak = file + ".bak"
 
 X_OFFSET = 25000000
 Y_OFFSET = 40000000
-K_WIDTH  =  19000000
+K_WIDTH  =  19050000
 TILT_D   = 10
 TILT     = math.radians(TILT_D)
 D_OFFSET_X = 2000000
@@ -50,8 +50,8 @@ LEFT_HAND = [
     Column(3000000,[16, 17, 18, 19, 20]),
     Column(-3000000,[21, 22, 23, 24, 25]),
     Column(-3000000,[26, 27, 28, 29, 30]),
-    Column(-75000000,[61], 900),
-    Column(0,[62], 900)
+    Column(-75000000,[61]),
+    Column(0,[62])
 ]
 
 RIGHT_HAND = [
@@ -61,8 +61,8 @@ RIGHT_HAND = [
     Column(3000000,[41,42,43,44,45]),
     Column(-3000000,[36,37,38,39,40]),
     Column(-3000000,[31,32,33,34,35]),
-    Column(-75000000,[63], 900),
-    Column(0,[64], 900)
+    Column(-75000000,[63]),
+    Column(0,[64])
 ]
 
 pos = pcbnew.wxPoint(0,0)
@@ -77,7 +77,7 @@ for c in LEFT_HAND:
         rotate(k, c.rotation + -10 * TILT_D)
         pos = pcbnew.wxPoint(round(pos.x - math.sin(TILT) * K_WIDTH), round(pos.y + math.cos(TILT) * K_WIDTH))
 
-pos = pcbnew.wxPoint(300000000,0)
+pos = pcbnew.wxPoint(308000000,0)
 last_start_pos = pos
 
 for c in RIGHT_HAND:
