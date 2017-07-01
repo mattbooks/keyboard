@@ -1,4 +1,4 @@
-update=Mon 12 Jun 2017 07:52:48 PM PDT
+update=Thu 29 Jun 2017 07:35:31 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,4 +58,3 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/home/matt/projects/kicad_libraries/generics
