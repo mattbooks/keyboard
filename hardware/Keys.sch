@@ -1106,22 +1106,20 @@ Text GLabel 7300 2900 0    60   Input ~ 0
 COL4
 Text GLabel 7300 3000 0    60   Input ~ 0
 COL5
-Text GLabel 7300 3100 0    60   Input ~ 0
-COL6
-Text GLabel 7300 3200 0    60   Input ~ 0
-COL7
 Text GLabel 7300 3400 0    60   Input ~ 0
-COL8
+COL6
 Text GLabel 7300 3500 0    60   Input ~ 0
-COL9
+COL7
 Text GLabel 7300 3600 0    60   Input ~ 0
-COL10
+COL8
 Text GLabel 7300 3700 0    60   Input ~ 0
-COL11
+COL9
 Text GLabel 7300 3800 0    60   Input ~ 0
+COL10
+Text GLabel 7300 3900 0    60   Input ~ 0
+COL11
+Text GLabel 7300 4000 0    60   Input ~ 0
 COL12
-NoConn ~ 7300 3900
-NoConn ~ 7300 4000
 NoConn ~ 7300 4100
 $Comp
 L +5V #PWR018
@@ -1229,4 +1227,6 @@ F 3 "" H 8850 2400 50  0001 C CNN
 	1    8850 2400
 	1    0    0    -1  
 $EndComp
+NoConn ~ 7300 3100
+NoConn ~ 7300 3200
 $EndSCHEMATC
