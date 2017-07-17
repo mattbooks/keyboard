@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name keyboard-modules)(type KiCad)(uri "$(KIPRJMOD)/keyboard-modules.pretty")(options "")(descr ""))
+  (lib (name d_mod)(type KiCad)(uri "$(KIPRJMOD)/d_mod.pretty")(options "")(descr ""))
 )
