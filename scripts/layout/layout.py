@@ -42,6 +42,13 @@ def drawEdge(start, end):
     pcb.Add(edge)
 
 
+def addHole(p):
+    io = pcbnew.PCB_IO()
+    mod = io.FootprintLoad('/home/matt/projects/kicad-library/cache/Mounting_Holes.pretty', 'MountingHole_3.2mm_M3')
+    mod.SetPosition(pcbnew.wxPoint(p.x + X_OFFSET, p.y + Y_OFFSET))
+    pcb.Add(mod)
+
+
 pcb.Save(bak)
 
 
@@ -91,10 +98,10 @@ for c in LEFT_HAND:
                          last_start_pos.y + K_WIDTH * math.sin(TILT) - c.offset * math.cos(TILT))
     top_left = pos if not top_left else top_left
     last_start_pos = pos
-    for k in c.keys:
-        moveS(k, pcbnew.wxPoint(pos.x, pos.y), c.rotation + -10 * TILT_D)
-        moveD(k, pcbnew.wxPoint(pos.x, pos.y), c.rotation + -10 * TILT_D)
-        pos = pcbnew.wxPoint(round(pos.x - math.sin(TILT) * K_WIDTH), round(pos.y + math.cos(TILT) * K_WIDTH))
+    # for k in c.keys:
+    #     moveS(k, pcbnew.wxPoint(pos.x, pos.y), c.rotation + -10 * TILT_D)
+    #     moveD(k, pcbnew.wxPoint(pos.x, pos.y), c.rotation + -10 * TILT_D)
+    #     pos = pcbnew.wxPoint(round(pos.x - math.sin(TILT) * K_WIDTH), round(pos.y + math.cos(TILT) * K_WIDTH))
 
 pos = pcbnew.wxPoint(308000000,0)
 top_right = None
@@ -105,19 +112,10 @@ for c in RIGHT_HAND:
                          last_start_pos.y + K_WIDTH * math.sin(TILT) - c.offset * math.cos(TILT))
     top_right = pos if not top_right else top_right
     last_start_pos = pos
-    for k in c.keys:
-        moveS(k, pcbnew.wxPoint(pos.x, pos.y), c.rotation + 10 * TILT_D)
-        moveD(k, pcbnew.wxPoint(pos.x, pos.y), c.rotation + 10 * TILT_D, True)
-        pos = pcbnew.wxPoint(round(pos.x + math.sin(TILT) * K_WIDTH), round(pos.y + math.cos(TILT) * K_WIDTH))
-
-drawEdge(top_left, top_right)
-
-edge = pcbnew.DRAWSEGMENT()
-edge.SetLayer(pcb.GetLayerID('Dwgs.User'))
-edge.SetStart(pcbnew.wxPoint(154000000+X_OFFSET,0+Y_OFFSET))
-edge.SetEnd(pcbnew.wxPoint(154000000+X_OFFSET,150000000+Y_OFFSET))
-
-pcb.Add(edge)
+    # for k in c.keys:
+    #     moveS(k, pcbnew.wxPoint(pos.x, pos.y), c.rotation + 10 * TILT_D)
+    #     moveD(k, pcbnew.wxPoint(pos.x, pos.y), c.rotation + 10 * TILT_D, True)
+    #     pos = pcbnew.wxPoint(round(pos.x + math.sin(TILT) * K_WIDTH), round(pos.y + math.cos(TILT) * K_WIDTH))
 
 ANG = math.radians(45 - TILT_D)
 DIAG = 0.5 * math.sqrt(2 * (K_WIDTH * K_WIDTH))
@@ -156,12 +154,23 @@ middle_right = pcbnew.wxPoint(
     bottom_right.y + math.sin(TILT) * HAND_WIDTH
 )
 
-drawEdge(top_left, bottom_left)
-drawEdge(bottom_left,middle_left)
-drawEdge(middle_left, middle_right)
-drawEdge(middle_right, bottom_right)
-drawEdge(bottom_right, top_right)
-drawEdge(top_right, top_left)
+# drawEdge(top_left, bottom_left)
+# drawEdge(bottom_left,middle_left)
+# drawEdge(middle_left, middle_right)
+# drawEdge(middle_right, bottom_right)
+# drawEdge(bottom_right, top_right)
+# drawEdge(top_right, top_left)
+
+mounting_holes = [
+    pcbnew.wxPoint(top_left.x + 90000000, top_left.y + 5000000),
+    pcbnew.wxPoint(top_right.x - 90000000, top_right.y + 5000000),
+    pcbnew.wxPoint(bottom_left.x + 6000000, bottom_left.y - 4000000),
+    pcbnew.wxPoint(bottom_right.x - 6000000, bottom_left.y - 4000000),
+    pcbnew.wxPoint((middle_left.x + middle_right.x) / 2, middle_left.y - 5000000)
+]
+
+for hole in mounting_holes:
+    addHole(hole)
 
 pcb.Save(file)
 
