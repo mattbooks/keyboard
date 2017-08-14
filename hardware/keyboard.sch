@@ -29,7 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:keyboard-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -194,7 +194,7 @@ U 1 1 58ECD6C3
 P 2050 2500
 F 0 "F1" V 1975 2500 50  0000 C CNN
 F 1 "Polyfuse_Small" V 2125 2500 50  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 2100 2300 50  0001 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 2100 2300 50  0001 L CNN
 F 3 "" H 2050 2500 50  0001 C CNN
 	1    2050 2500
 	0    1    1    0   
