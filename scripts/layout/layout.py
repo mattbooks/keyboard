@@ -122,16 +122,17 @@ DIAG = 0.5 * math.sqrt(2 * (K_WIDTH * K_WIDTH))
 EDGE_OFF_X = DIAG * math.sin(ANG)
 EDGE_OFF_Y = DIAG * math.cos(ANG)
 
-EDGE_HEIGHT = 5 * K_WIDTH + 7500000
+EXTRA_SPACE = 7500000
+EDGE_HEIGHT = 5 * K_WIDTH + 2 * EXTRA_SPACE
 HAND_WIDTH = 8 * K_WIDTH
 
 top_left = pcbnew.wxPoint(
-    top_left.x - EDGE_OFF_X,
-    top_left.y - EDGE_OFF_Y
+    top_left.x - EDGE_OFF_X + math.sin(TILT) * EXTRA_SPACE,
+    top_left.y - EDGE_OFF_Y - math.cos(TILT) * EXTRA_SPACE
 )
 top_right = pcbnew.wxPoint(
-    top_right.x + EDGE_OFF_X,
-    top_right.y - EDGE_OFF_Y
+    top_right.x + EDGE_OFF_X - math.sin(TILT) * EXTRA_SPACE,
+    top_right.y - EDGE_OFF_Y - math.cos(TILT) * EXTRA_SPACE
 )
 
 bottom_left = pcbnew.wxPoint(
@@ -161,12 +162,24 @@ middle_right = pcbnew.wxPoint(
 # drawEdge(bottom_right, top_right)
 # drawEdge(top_right, top_left)
 
+HOLE_WIDTH = 4000000
+HOLE_OFFSET_X = 1.3 * HOLE_WIDTH * math.sin(TILT + math.radians(45))
+HOLE_OFFSET_Y = 1.3 * HOLE_WIDTH * math.cos(TILT + math.radians(45))
+
+BOTTOM_HOLE_SPACE = 6 * K_WIDTH - 2 * HOLE_WIDTH
+
 mounting_holes = [
-    pcbnew.wxPoint(top_left.x + 90000000, top_left.y + 5000000),
-    pcbnew.wxPoint(top_right.x - 90000000, top_right.y + 5000000),
-    pcbnew.wxPoint(bottom_left.x + 6000000, bottom_left.y - 4000000),
-    pcbnew.wxPoint(bottom_right.x - 6000000, bottom_left.y - 4000000),
-    pcbnew.wxPoint((middle_left.x + middle_right.x) / 2, middle_left.y - 5000000)
+    pcbnew.wxPoint(top_left.x + HOLE_WIDTH, top_left.y + HOLE_WIDTH),
+    pcbnew.wxPoint(top_left.x + 90000000, top_left.y + HOLE_WIDTH),
+    pcbnew.wxPoint(top_right.x - 90000000, top_right.y + HOLE_WIDTH),
+    pcbnew.wxPoint(top_right.x - HOLE_WIDTH, top_right.y + HOLE_WIDTH),
+    pcbnew.wxPoint(bottom_left.x + HOLE_OFFSET_X, bottom_left.y - HOLE_OFFSET_Y),
+    pcbnew.wxPoint(bottom_right.x - HOLE_OFFSET_X, bottom_left.y - HOLE_OFFSET_Y),
+    pcbnew.wxPoint((middle_left.x + middle_right.x) / 2, middle_left.y - HOLE_WIDTH),
+    pcbnew.wxPoint(bottom_left.x + HOLE_OFFSET_X + BOTTOM_HOLE_SPACE * math.cos(TILT),
+                   bottom_left.y - HOLE_OFFSET_Y + BOTTOM_HOLE_SPACE * math.sin(TILT)),
+    pcbnew.wxPoint(bottom_right.x - HOLE_OFFSET_X - BOTTOM_HOLE_SPACE * math.cos(TILT),
+                   bottom_right.y - HOLE_OFFSET_Y + BOTTOM_HOLE_SPACE * math.sin(TILT)),
 ]
 
 for hole in mounting_holes:
