@@ -46,6 +46,7 @@ def addHole(p):
     io = pcbnew.PCB_IO()
     mod = io.FootprintLoad('/home/matt/projects/kicad-library/cache/Mounting_Holes.pretty', 'MountingHole_3.2mm_M3')
     mod.SetPosition(pcbnew.wxPoint(p.x + X_OFFSET, p.y + Y_OFFSET))
+    mod.SetReference("")
     pcb.Add(mod)
 
 
