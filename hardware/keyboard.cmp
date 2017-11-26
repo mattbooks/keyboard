@@ -1,75 +1,163 @@
-Cmp-Mod V01 Created by PcbNew   date = Sun 30 Jul 2017 08:22:41 PM EDT
+Cmp-Mod V01 Created by PcbNew   date = Sat 25 Nov 2017 03:29:21 PM PST
 
 BeginCmp
-TimeStamp = 59588C15
-Path = /5947FBED/594A3211
-Reference = U2;
-ValeurCmp = MCP23018_SSOP;
-IdModule  = Housings_SSOP:SSOP-28_5.3x10.2mm_Pitch0.65mm;
+TimeStamp = 5990ED17
+Path = /58EC8107
+Reference = Y1;
+ValeurCmp = 16MHz;
+IdModule  = Crystals:Crystal_Round_d1.0mm_Vertical;
 EndCmp
 
 BeginCmp
-TimeStamp = 597D089A
-Path = 
-Reference = G***;
-ValeurCmp = LOGO;
-IdModule  = matt:hbnum2-small;
+TimeStamp = 59588357
+Path = /594EA13B
+Reference = R8;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
 EndCmp
 
 BeginCmp
-TimeStamp = 596F616C
+TimeStamp = 5A19F87F
 Path = 
-Reference = REF**;
+Reference = [NoRef];
 ValeurCmp = MountingHole_3.2mm_M3;
 IdModule  = MountingHole_3.2mm_M3;
 EndCmp
 
 BeginCmp
-TimeStamp = 596F6166
+TimeStamp = 5A19F879
 Path = 
-Reference = REF**;
+Reference = [NoRef];
 ValeurCmp = MountingHole_3.2mm_M3;
 IdModule  = MountingHole_3.2mm_M3;
 EndCmp
 
 BeginCmp
-TimeStamp = 596F6160
+TimeStamp = 5A19F873
 Path = 
-Reference = REF**;
+Reference = [NoRef];
 ValeurCmp = MountingHole_3.2mm_M3;
 IdModule  = MountingHole_3.2mm_M3;
 EndCmp
 
 BeginCmp
-TimeStamp = 596F615A
+TimeStamp = 5A19F86D
 Path = 
-Reference = REF**;
+Reference = [NoRef];
 ValeurCmp = MountingHole_3.2mm_M3;
 IdModule  = MountingHole_3.2mm_M3;
 EndCmp
 
 BeginCmp
-TimeStamp = 596F6154
+TimeStamp = 5A19F867
 Path = 
-Reference = REF**;
+Reference = [NoRef];
 ValeurCmp = MountingHole_3.2mm_M3;
 IdModule  = MountingHole_3.2mm_M3;
 EndCmp
 
 BeginCmp
-TimeStamp = 595AE827
-Path = /5947FBED/594A0E61/5940D01B
-Reference = S31;
-ValeurCmp = SPST;
-IdModule  = keyboard-modules:CHERRY_PCB_100H;
+TimeStamp = 5A19F861
+Path = 
+Reference = [NoRef];
+ValeurCmp = MountingHole_3.2mm_M3;
+IdModule  = MountingHole_3.2mm_M3;
 EndCmp
 
 BeginCmp
-TimeStamp = 596D3BD3
-Path = /595A9E52
-Reference = D101;
-ValeurCmp = LED_RGB;
-IdModule  = LEDs:LED_RGB_PLCC-6;
+TimeStamp = 5A19F85B
+Path = 
+Reference = [NoRef];
+ValeurCmp = MountingHole_3.2mm_M3;
+IdModule  = MountingHole_3.2mm_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A19F855
+Path = 
+Reference = [NoRef];
+ValeurCmp = MountingHole_3.2mm_M3;
+IdModule  = MountingHole_3.2mm_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A19F84F
+Path = 
+Reference = [NoRef];
+ValeurCmp = MountingHole_3.2mm_M3;
+IdModule  = MountingHole_3.2mm_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A19F856
+Path = 
+Reference = [NoRef];
+ValeurCmp = MountingHole_3.2mm_M3;
+IdModule  = MountingHole_3.2mm_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A19F850
+Path = 
+Reference = [NoRef];
+ValeurCmp = MountingHole_3.2mm_M3;
+IdModule  = MountingHole_3.2mm_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A19F84A
+Path = 
+Reference = [NoRef];
+ValeurCmp = MountingHole_3.2mm_M3;
+IdModule  = MountingHole_3.2mm_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A19F844
+Path = 
+Reference = [NoRef];
+ValeurCmp = MountingHole_3.2mm_M3;
+IdModule  = MountingHole_3.2mm_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A19F83E
+Path = 
+Reference = [NoRef];
+ValeurCmp = MountingHole_3.2mm_M3;
+IdModule  = MountingHole_3.2mm_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A19F838
+Path = 
+Reference = [NoRef];
+ValeurCmp = MountingHole_3.2mm_M3;
+IdModule  = MountingHole_3.2mm_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A19F832
+Path = 
+Reference = [NoRef];
+ValeurCmp = MountingHole_3.2mm_M3;
+IdModule  = MountingHole_3.2mm_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A19F82C
+Path = 
+Reference = [NoRef];
+ValeurCmp = MountingHole_3.2mm_M3;
+IdModule  = MountingHole_3.2mm_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A19F826
+Path = 
+Reference = [NoRef];
+ValeurCmp = MountingHole_3.2mm_M3;
+IdModule  = MountingHole_3.2mm_M3;
 EndCmp
 
 BeginCmp
@@ -78,6 +166,14 @@ Path = /58E92094
 Reference = U1;
 ValeurCmp = ATMEGA32U4-AU;
 IdModule  = Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 595AE827
+Path = /5947FBED/594A0E61/5940D01B
+Reference = S31;
+ValeurCmp = SPST;
+IdModule  = keyboard-modules:CHERRY_PCB_100H;
 EndCmp
 
 BeginCmp
@@ -121,14 +217,6 @@ IdModule  = keyboard-modules:CHERRY_PCB_200V;
 EndCmp
 
 BeginCmp
-TimeStamp = 59587BFD
-Path = /58EC7F9A
-Reference = C1;
-ValeurCmp = 18pF;
-IdModule  = Capacitors_SMD:C_1206_HandSoldering;
-EndCmp
-
-BeginCmp
 TimeStamp = 59587C0E
 Path = /58EC8DB4
 Reference = C2;
@@ -161,41 +249,9 @@ IdModule  = Capacitors_SMD:C_1206_HandSoldering;
 EndCmp
 
 BeginCmp
-TimeStamp = 59588290
-Path = /58ECD6C3
-Reference = F1;
-ValeurCmp = Polyfuse_Small;
-IdModule  = Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering;
-EndCmp
-
-BeginCmp
-TimeStamp = 595882B9
-Path = /58E8417C
-Reference = J1;
-ValeurCmp = USB_OTG;
-IdModule  = Connectors_USB:USB_Micro-B_Molex-105017-0001;
-EndCmp
-
-BeginCmp
-TimeStamp = 595882E0
-Path = /58EC77A9
-Reference = R1;
-ValeurCmp = 1k;
-IdModule  = Resistors_SMD:R_1206_HandSoldering;
-EndCmp
-
-BeginCmp
 TimeStamp = 595882F1
 Path = /594E9E0D
 Reference = R2;
-ValeurCmp = 1k;
-IdModule  = Resistors_SMD:R_1206_HandSoldering;
-EndCmp
-
-BeginCmp
-TimeStamp = 59588302
-Path = /594E9E8E
-Reference = R3;
 ValeurCmp = 1k;
 IdModule  = Resistors_SMD:R_1206_HandSoldering;
 EndCmp
@@ -229,14 +285,6 @@ TimeStamp = 59588346
 Path = /58E91EA1
 Reference = R7;
 ValeurCmp = 22;
-IdModule  = Resistors_SMD:R_1206_HandSoldering;
-EndCmp
-
-BeginCmp
-TimeStamp = 59588357
-Path = /594EA13B
-Reference = R8;
-ValeurCmp = 1k;
 IdModule  = Resistors_SMD:R_1206_HandSoldering;
 EndCmp
 
@@ -710,14 +758,6 @@ Path = /5947FBED/59511757/5950FE13
 Reference = S62;
 ValeurCmp = SPST;
 IdModule  = keyboard-modules:CHERRY_PCB_200V;
-EndCmp
-
-BeginCmp
-TimeStamp = 596D35D3
-Path = /5947FBED/594A0D2A/5940D05E
-Reference = D1;
-ValeurCmp = D_Small;
-IdModule  = Diodes_SMD:D_SOD-123;
 EndCmp
 
 BeginCmp
@@ -1225,11 +1265,171 @@ IdModule  = Diodes_SMD:D_SOD-123;
 EndCmp
 
 BeginCmp
-TimeStamp = 596D3C00
-Path = /58EC8107
-Reference = Y1;
-ValeurCmp = 16MHz;
-IdModule  = Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm_HandSoldering;
+TimeStamp = 5990EBC1
+Path = /58E8417C
+Reference = J1;
+ValeurCmp = USB_OTG;
+IdModule  = keyboard-modules:USB-MINI;
+EndCmp
+
+BeginCmp
+TimeStamp = 5990EC0C
+Path = /5947FBED/594A3211
+Reference = U2;
+ValeurCmp = MCP23018_SSOP;
+IdModule  = Housings_SSOP:SSOP-24_5.3x8.2mm_Pitch0.65mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5990ED12
+Path = /58EC7F9A
+Reference = C1;
+ValeurCmp = 18pF;
+IdModule  = Capacitors_SMD:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 59997FDF
+Path = /58ECD6C3
+Reference = F1;
+ValeurCmp = Polyfuse_Small;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A2FFE8B
+Path = /5A097AA4
+Reference = PD2;
+ValeurCmp = CONN_01X01;
+IdModule  = keyboard-modules:CONN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A2FFE90
+Path = /5A097A40
+Reference = PD3;
+ValeurCmp = CONN_01X01;
+IdModule  = keyboard-modules:CONN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A2FFE95
+Path = /5A0979D7
+Reference = PD4;
+ValeurCmp = CONN_01X01;
+IdModule  = keyboard-modules:CONN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A2FFE9A
+Path = /5A097979
+Reference = PD5;
+ValeurCmp = CONN_01X01;
+IdModule  = keyboard-modules:CONN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A2FFE9F
+Path = /5A09791E
+Reference = PD6;
+ValeurCmp = CONN_01X01;
+IdModule  = keyboard-modules:CONN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A2FFEA9
+Path = /5A098006
+Reference = PE6;
+ValeurCmp = CONN_01X01;
+IdModule  = keyboard-modules:CONN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A2FFEAE
+Path = /5A097FA2
+Reference = PF0;
+ValeurCmp = CONN_01X01;
+IdModule  = keyboard-modules:CONN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A2FFEB3
+Path = /5A097F41
+Reference = PF1;
+ValeurCmp = CONN_01X01;
+IdModule  = keyboard-modules:CONN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A2FFEB8
+Path = /5A097EDF
+Reference = PF4;
+ValeurCmp = CONN_01X01;
+IdModule  = keyboard-modules:CONN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A2FFEBD
+Path = /5A097E80
+Reference = PF5;
+ValeurCmp = CONN_01X01;
+IdModule  = keyboard-modules:CONN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A2FFEC2
+Path = /5A097E28
+Reference = PF6;
+ValeurCmp = CONN_01X01;
+IdModule  = keyboard-modules:CONN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A2FFEC7
+Path = /5A097DAD
+Reference = PF7;
+ValeurCmp = CONN_01X01;
+IdModule  = keyboard-modules:CONN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A300372
+Path = /5990E50B
+Reference = PB7;
+ValeurCmp = CONN_01X01;
+IdModule  = keyboard-modules:CONN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A1A086F
+Path = /5947FBED/594A0D2A/5940D05E
+Reference = D1;
+ValeurCmp = D_Small;
+IdModule  = Diodes_SMD:D_SOD-123;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A1A0877
+Path = /5A1A0698
+Reference = D99;
+ValeurCmp = LED_ARGB;
+IdModule  = LEDs:LED_D5.0mm-4-v2;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A1A088D
+Path = /5A1A082F
+Reference = R1;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A1A089E
+Path = /5A1A08BC
+Reference = R3;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
 EndCmp
 
 EndListe
